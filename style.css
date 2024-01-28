@@ -38,6 +38,7 @@ html{
     content: '';
     width: 0;
     height: 3px;
+    /* background: linear-gradient(45deg,#7f00ff,pink); */
     background: #000;
     position: absolute;
     left: 0;
@@ -84,10 +85,10 @@ html{
 .text::before{
     position: absolute;
     content: '';
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    left: -12%;
+    left: -10%;
     top: 40%;
     background: linear-gradient(45deg,#7f00ff,pink);
     animation: obj 6s linear infinite;
@@ -104,6 +105,7 @@ html{
     z-index: -1;
     background: linear-gradient(45deg,#7f00ff,pink);
     animation: obj1 6s linear infinite;
+    margin:-32px;
 
 }
 
@@ -204,7 +206,133 @@ html{
      width: 100%;
     height: 100vh;
 }
-
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-top: 120px;
+    margin-left: 65px;
+  }
+  
+  .up {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+  }
+  
+  .card1 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: black;
+    border-radius: 90px 5px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .instagram {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+    fill: #cc39a4;
+  }
+  
+  .card2 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: black;
+    border-radius: 5px 90px 5px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .linkedin {
+    margin-top: 1.5em;
+    margin-left: -.9em;
+    fill: #fff;
+  }
+  
+  .card3 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: black;
+    border-radius: 5px 5px 5px 90px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .github {
+    margin-top: -.6em;
+    margin-left: 1.2em;
+    fill: #fff;
+  }
+  
+  .card4 {
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    background: black;
+    border-radius: 5px 5px 90px 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+  }
+  
+  .facebook {
+    margin-top: -.9em;
+    margin-left: -1.2em;
+    fill: blue;
+  }
+  
+  .card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+  }
+  
+  .card1:hover .instagram {
+    fill: white;
+  }
+  
+  .card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: white;
+  }
+  
+  .card2:hover .linkedin {
+    fill: black;
+  }
+  
+  .card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: white;
+  }
+  
+  .card3:hover .github {
+    fill: black;
+  }
+  
+  .card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: blue;
+  }
+  
+  .card4:hover .facebook {
+    fill: white;
+  }
 .row{
     display: flex;
     justify-content: space-between;
@@ -227,7 +355,7 @@ html{
 }
 
 .sub-title{
-    padding: 150px 10px 15px 50px;
+    padding: 90px 10px 15px 50px;
     font-size: 60px;
     font-weight: 600;
     color: #000;
@@ -282,7 +410,7 @@ html{
     display: block;
 }
 
-.img{
+/* .img{
     z-index: -10;
     width: 300px;
     height: 300px;
@@ -296,14 +424,14 @@ html{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
-
+} */
+/* 
 .social-icons{
     margin-top: 110px;
     margin-left: 70px;
-}
+} */
 
-.social-icons a{
+/* .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
@@ -315,7 +443,7 @@ html{
 .social-icons a:hover{
     color: #000;
     transform: translateY(-5px);
-}
+} */
 
 /* --------------services------------- */
 
@@ -325,7 +453,7 @@ html{
 }
 
 .subs-title{
-    padding: 100px 10px 10px 80px;
+    padding: 50px 10px 10px 80px;
     font-size: 60px;
     font-weight: 600;
     color: #000;   
@@ -348,6 +476,21 @@ html{
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s,box-shadow 0.5s;
 }
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+.services-list div:hover{
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+    /* background: linear-gradient(45deg,#7f00ff,pink); */
+    background: #7f00ff;
+    transform: translateY( -10px);
+}
+
 .services-list div p{
     color: #fff;
 }
@@ -364,21 +507,228 @@ html{
      font-weight: 500;
      margin-bottom: 15px;
 }
-
-.services-list div a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 12px;
-    margin-top: 20px;
+button {
+    position: relative;
     display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 15px;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+   }
+   button.learn-more .circle .iicon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .iicon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.200rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .iicon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .iicon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
+   }
+/* -------------------projects------------ */
+/* -------------------------projects--------------- */
+
+#project{
+    width: 100%;
+   height: 100vh;
 }
 
-.services-list div:hover{
-    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
-    background: #000;
-    transform: translateY( -10px);
-}
+.book {
+    top: 10%;
+    left: 7%;
+    position: relative;
+    border-radius: 10px;
+    width: 480px;
+    height: 400px;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    -webkit-transform: preserve-3d;
+    -ms-transform: preserve-3d;
+    transform: preserve-3d;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+  }
+  
+  .cover {
+    position: absolute;
+    background-color: lightgray;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  
+  .book:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-80deg);
+  }
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
 
+  .button-icon {
+    display: flex;
+    border: 3px #fff solid;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    transition: border-color 0.5s;
+  }
+  
+  .icon {
+    background-color: #fff;
+    padding: 10px 10px 5px 10px;
+  }
+  
+  .icon svg {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 17px;
+  }
+
+  .cube span a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .button-icon:hover {
+    border-color: black;
+  }
+  
+  .button-icon:hover .cube {
+    transform: rotateX(90deg);
+  }
+  
+  .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+  }
+  
+  .top {
+    background: linear-gradient(45deg,#7f00ff,pink);
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  }
+  
+  .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+  }
 /* --------------contact---------- */
 #contact{
     width: 100%;
@@ -481,3 +831,7 @@ form btn2{
 .btn:active{
     transform: scale(0.98);
 }
+
+
+
+  
