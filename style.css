@@ -803,6 +803,13 @@ form input, form textarea{
     border-radius: 6px;
 }
 
+#tarea{
+    min-width: 90%;
+    max-width: 90%;
+    max-height: 80px;
+    min-height: 80PX;
+}
+
 form btn2{
     padding: 14px 60px;
     font-size: 18px;
